@@ -16,7 +16,7 @@ const Navbar: React.FC<NavbarProps> = ({ data }) => {
   const { buttons, logo } = data[0];
 
   return (
-    <nav aria-label="Main" className="p-4 md:p-6">
+    <nav aria-label="Main" className="p-4 md:p-0">
       <div className="mx-auto flex max-w-6xl flex-col justify-between py-2 font-medium text-white md:flex-row md:items-center">
         <div className="flex items-center justify-between">
           <Link href="/" className="z-50" onClick={() => setOpen(false)}>

@@ -9,9 +9,9 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Glisten.ai - The Design Assistant of the Future.",
+  title: "Prism.ai - The Design Assistant of the Future.",
   description:
-    "With Glisten.ai you save hours of time on wireframes, mockups and final designs.",
+    "With Prism.ai you save hours of time on wireframes, mockups and final designs.",
 };
 
 export default function RootLayout({
@@ -23,7 +23,7 @@ export default function RootLayout({
     <html lang="en" className={poppins.className}>
       <body className="bg-[#070815] text-white">
         <Header />
-        {children}
+        <main>{children}</main>
       </body>
     </html>
   );
