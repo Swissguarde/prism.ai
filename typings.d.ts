@@ -50,10 +50,30 @@ interface HeroProps {
 }
 
 interface Description {
-  _key: string;
   _type: string;
-  children: Child[];
   style: "normal";
+  _key: string;
+  children: Child[];
+}
+
+interface BentoItem {
+  bentoHeader: string;
+  bentoDescription: string;
+  bentoImage: Image;
+  wide?: boolean;
+  _key: string;
+}
+
+interface BentoProps {
+  bento: BentoItem[];
+  _type: string;
+  title: string;
+  _updatedAt: string;
+  highlighted: string;
+  _createdAt: string;
+  _rev: string;
+  description: Description[];
+  _id: string;
 }
 
 interface Child {
