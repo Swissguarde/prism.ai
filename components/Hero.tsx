@@ -66,7 +66,7 @@ export default function Hero({ data }: IProps) {
           ],
         } = item;
         return (
-          <div className="relative" ref={container}>
+          <div className="relative" ref={container} key={item._id}>
             <StarGrid />
             <h1 className="hero__heading text-balance text-5xl font-medium opacity-0 md:text-7xl">
               {title}
