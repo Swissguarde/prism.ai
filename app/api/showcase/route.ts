@@ -1,8 +1,8 @@
 import { sanityClient } from "@/app/lib/sanity";
-// export const dynamic = "force-dynamic";
+
 export const GET = async () => {
   try {
-    const query = `*[_type == "hero"]`;
+    const query = `*[_type == "showcase"]`;
     const data = await sanityClient.fetch(query);
     return new Response(JSON.stringify(data), { status: 200 });
   } catch (error: any) {

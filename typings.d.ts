@@ -24,10 +24,6 @@ interface NavigationProps {
   _updatedAt: string;
 }
 
-interface Asset {
-  // Add properties of Asset here
-}
-
 interface Slug {
   current: string;
   _type: string;
@@ -81,4 +77,18 @@ interface Child {
   _key: string;
   text: string;
   marks: [];
+}
+
+interface ShowcaseProps {
+  title: string;
+  subtitle: string;
+  showcaseButton: string;
+  showcaseImage: {
+    asset: {
+      _ref: string;
+    };
+  };
+  showcaseTitle: string;
+  _id: string;
+  showcaseDescription: string;
 }
