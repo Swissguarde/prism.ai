@@ -1,7 +1,8 @@
-import Header from "@/components/header/Header";
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
+import Footer from "@/components/Footer";
+import Header from "@/components/header/Header";
 
 const poppins = Poppins({
   weight: "400",
@@ -22,8 +23,11 @@ export default function RootLayout({
   return (
     <html lang="en" className={poppins.className}>
       <body className="bg-[#070815] text-white">
-        <Header />
-        <main>{children}</main>
+        <main>
+          <Header />
+          {children}
+          <Footer />
+        </main>
       </body>
     </html>
   );

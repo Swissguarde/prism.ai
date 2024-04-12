@@ -3,6 +3,8 @@ import BentoBox from "@/components/BentoBox";
 import Showcase from "@/components/Showcase";
 import Casestudies from "@/components/Casestudies";
 import { fetchData } from "./utils/fetchData";
+import Integrations from "@/components/Integrations";
+import CTA from "@/components/CTA";
 
 export default async function Home() {
   const data: HeroProps[] = await fetchData("hero");
@@ -16,6 +18,8 @@ export default async function Home() {
       <BentoBox bentoData={bentoData} />
       <Showcase showcaseData={showcaseData} />
       <Casestudies casestudyData={casestudyData} />
+      <Integrations />
+      <CTA />
     </>
   );
 }
