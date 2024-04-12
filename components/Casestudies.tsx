@@ -31,13 +31,8 @@ export default function Casestudies({ casestudyData }: IProps) {
             </div>
             <div className="mt-20 grid gap-16">
               {caseStudy.map((item, i) => {
-                const {
-                  _key,
-                  casestudyDescription,
-                  casestudyLink,
-                  casestudyTitle,
-                  image,
-                } = item;
+                const { _key, casestudyDescription, casestudyTitle, image } =
+                  item;
                 const { children } = casestudyDescription[0];
                 return (
                   <div
@@ -50,7 +45,7 @@ export default function Casestudies({ casestudyData }: IProps) {
                         <p>{children[0].text}</p>
                       </div>
                       <Link
-                        href={`/case-study/${casestudyLink}`}
+                        href="/"
                         className="after:absolute after:inset-0 hover:underline"
                       >
                         Read {casestudyTitle}'s case study
