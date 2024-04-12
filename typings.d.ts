@@ -92,3 +92,27 @@ interface ShowcaseProps {
   _id: string;
   showcaseDescription: string;
 }
+
+interface CasestudyProps {
+  _id: string;
+  title: string;
+  description: Description[];
+  caseStudy: CaseB[];
+}
+
+interface CaseB {
+  casestudyTitle: string;
+  casestudyLink: string;
+  _key: string;
+  image: {
+    asset: {
+      _ref: string;
+    };
+  };
+  casestudyDescription: CaseDescription[];
+}
+
+interface CaseDescription {
+  _key: string;
+  children: Child[];
+}

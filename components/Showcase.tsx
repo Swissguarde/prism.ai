@@ -38,7 +38,7 @@ export default function Showcase({ showcaseData }: IProps) {
   );
 
   return (
-    <Bounded className="relative">
+    <>
       {showcaseData.map((showcase) => {
         const {
           _id,
@@ -49,9 +49,11 @@ export default function Showcase({ showcaseData }: IProps) {
           subtitle,
           title,
         } = showcase;
-        console.log(showcaseImage);
+        {
+          console.log(showcaseImage.asset._ref);
+        }
         return (
-          <div key={_id}>
+          <Bounded key={_id} className="relative">
             <div className="glow absolute -z-10 aspect-square w-full max-w-xl rounded-full bg-blue-400/20 blur-3xl filter" />
             <div
               ref={container}
@@ -82,12 +84,12 @@ export default function Showcase({ showcaseData }: IProps) {
                 width={0}
                 height={0}
                 sizes="100vw"
-                className="h-full w-full opacity-90 shadow-2xl lg:-order-1 lg:col-span-2 lg:translate-x-[-15%] lg:pt-0"
+                className="h-auto w-full opacity-90 shadow-2xl lg:-order-1 lg:col-span-2 lg:translate-x-[-15%] lg:pt-0"
               />
             </div>
-          </div>
+          </Bounded>
         );
       })}
-    </Bounded>
+    </>
   );
 }
