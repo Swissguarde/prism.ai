@@ -1,4 +1,4 @@
-import { sanityClient } from "@/app/lib/sanity";
+import { sanityClient } from "@/lib/sanity";
 // export const dynamic = "force-dynamic";
 export const GET = async () => {
   try {

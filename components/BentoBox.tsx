@@ -1,7 +1,7 @@
 import clsx from "clsx";
 import Bounded from "./Bounded";
 import Image from "next/image";
-import { urlFor } from "@/app/lib/sanity";
+import { urlFor } from "@/lib/sanity";
 
 interface IProps {
   bentoData: BentoProps[];

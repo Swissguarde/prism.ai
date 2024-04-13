@@ -2,7 +2,7 @@
 import { PiGear } from "react-icons/pi";
 import ButtonLink from "./ButtonLink";
 import Image from "next/image";
-import { urlFor } from "@/app/lib/sanity";
+import { urlFor } from "@/lib/sanity";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";

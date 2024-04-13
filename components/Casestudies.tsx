@@ -2,7 +2,7 @@ import Image from "next/image";
 import Bounded from "./Bounded";
 import clsx from "clsx";
 import Link from "next/link";
-import { urlFor } from "@/app/lib/sanity";
+import { urlFor } from "@/lib/sanity";
 
 interface IProps {
   casestudyData: CasestudyProps[];

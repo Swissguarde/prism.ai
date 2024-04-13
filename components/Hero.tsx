@@ -1,5 +1,5 @@
 "use client";
-import { urlFor } from "@/app/lib/sanity";
+import { urlFor } from "@/lib/sanity";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import Image from "next/image";
