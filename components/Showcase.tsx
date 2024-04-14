@@ -49,9 +49,7 @@ export default function Showcase({ showcaseData }: IProps) {
           subtitle,
           title,
         } = showcase;
-        {
-          console.log(showcaseImage.asset._ref);
-        }
+
         return (
           <Bounded key={_id} className="relative">
             <div className="glow absolute -z-10 aspect-square w-full max-w-xl rounded-full bg-blue-400/20 blur-3xl filter" />

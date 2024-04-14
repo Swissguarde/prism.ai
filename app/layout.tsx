@@ -15,6 +15,8 @@ export const metadata: Metadata = {
     "With Prism.ai you save hours of time on wireframes, mockups and final designs.",
 };
 
+export const dynamic = "force-dynamic";
+
 export default function RootLayout({
   children,
 }: Readonly<{

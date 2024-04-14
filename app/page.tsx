@@ -6,6 +6,8 @@ import { fetchData } from "./utils/fetchData";
 import Integrations from "@/components/Integrations";
 import CTA from "@/components/CTA";
 
+export const dynamic = "force-dynamic";
+
 export default async function Home() {
   const data: HeroProps[] = await fetchData("hero");
   const bentoData: BentoProps[] = await fetchData("bento");
